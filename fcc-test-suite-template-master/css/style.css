@@ -1,0 +1,110 @@
+#welcome-section {
+    display: grid;
+    width: auto;
+    height: 600px;
+    background-color: rgb(20, 12, 22);
+    text-align: center;
+    text-decoration-color: antiquewhite;
+    color: rgb(250, 246, 246);
+    padding: 150px auto auto auto;
+    margin: 0px auto 10px auto;
+}
+
+#projects {
+    position: relative;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    align-content: space-arround;
+    justify-content: center;
+}
+
+#projects-item-left {
+  grid: 50%;
+}
+
+#projects-item-right {
+  grid: 50%;
+}
+
+@media (max-width: 800px) {
+  #projects {
+    flex-direction: column;
+  }
+}
+
+#project {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100px;
+
+}
+
+#image {
+    width: 450px;
+    height: 450px;
+    border: 1px solid red;
+  
+}
+
+.project-tile {
+    background-color: antiquewhite;
+    
+
+}
+
+.profile-link {
+  display: block;
+  padding: 8px;
+  background-color: #8369e9;
+
+}
+
+#main, #navbar {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(56, 91, 229);
+}
+
+li {
+    float: right;
+}
+
+li a {
+    
+    padding: 8px;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: royalblue; 
+    font-size: large;
+    font-style: italic;
+    font-weight: bolder;
+  }
+
+  li a:hover {
+    background-color: rgb(20, 12, 22);
+  }
+
+#footer {
+  text-align: center;
+  
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    display: none;
+  }
+}
